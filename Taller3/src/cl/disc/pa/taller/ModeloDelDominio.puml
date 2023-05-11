@@ -2,6 +2,6 @@
 'https://plantuml.com/sequence-diagram
 
 class Test{
-
+a
 }
 @enduml
