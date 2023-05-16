@@ -1,10 +1,31 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-entity instrumento{
+entity Cuerda{
 codigo
 precio
 stock
+tipo de instrumento
+tipo de cuerda
+numero de cuerda
+material de construccion
+tipo
+}
+entity Percusion{
+codigo
+precio
+stock
+tipo de instrumento
+tipo de percusion
+meterial de construccion
+altura
+}
+entity Viento{
+codigo
+precio
+stock
+tipo de instrumento
+material de construccion
 }
 
 entity trabajador{
@@ -13,12 +34,7 @@ apellido
 rut
 }
 
-entity cliente{
-nombre
-apellido
-rut
-}
-
-trabajador "1" --> "1..*" instrumento : registra
-trabajador "1" --> "1" cliente : vende
+trabajador "1" -- "1..*" Cuerda : administra >
+trabajador "1" -- "1..*" Percusion : administra >
+trabajador "1" -- "1..*" Viento : administra >
 @enduml
