@@ -1,0 +1,96 @@
+@startuml
+!pragma useIntermediatePackages false
+package cl.ucn.disc.pa.beattherhythm{
+
+    package model{
+        abstract Instrumento <<abstract>>{
+        -codigo: int
+        -precio: int
+        -stock: int
+
+        +Instrumento(codigo: int, precio: int, stock: int)
+        +getCodigo(): int
+        +getPrecio(): int
+        +getStock(): int
+        }
+
+        class Cuerda{
+        -tipoInstrumento: String
+        -tipoCuerda: String
+        -numeroCuerda: int
+        -materialDeConstruccion: String
+        -tipo: String
+
+        +Cuerda(codigo: int, precio: int, stock: int, tipoInstrumento: String , tipoCuerda: String, numeroCuerdas: int, materialDeConstruccion: String, tipo: String)
+        +getTipoInstrumento(): String
+        +getTipoCuerda(): String
+        +getNumeroCuerda(): int
+        +getMaterialDeConstruccion(): String
+        +getTipo(): String
+        }
+
+        class Percusion{
+        -tipoInstrumento: String
+        -tipoPercusion: String
+        -materialDeConstruccion: String
+        -altura: String
+
+        +Percusion(codigo: int, precio: int, stock: int, tipoInstrumento: String, tipoPercusion: String, materialDeConstruccion: String, altura: String)
+        +getTipoInstrumento(): String
+        +getTipoPercusion(): String
+        +getMaterialDeConstruccion(): String
+        +getAltura(): String
+        }
+
+        class Viento{
+        -tipoInstrumento: String
+        -materialDeConstruccion: String
+
+        +Viento(codigo: int, precio: int, stock: int, tipoInstrumento: String, materialDeConstruccion: String)
+        +getTipoInstrumento(): String
+        +getMaterialDeConstruccion(): String
+        }
+
+        class ListaInstrumento{
+        -instrumentos: Instrumento[]
+        -cant_actual: int
+        -cant_max: int
+
+        +ListaInstrumento(cant_max: int)
+        +agregarInstrumento(int codigo, int precio, int stock): boolean
+        +elimnarInstrumento(int codigo): boolean
+        +buscarInstrumento(int codigo): boolean
+        +getCantMax(): int
+        }
+
+        }
+
+            package services {
+
+            interface SistemaBeatTheRhythm <<interface>>{
+            +agregarInstrumentoCuerda(codigo: int, precio: int, stock: int, tipoInstrumento: String): boolean
+            +venderInstrumento(codigo: int): boolean
+            +consultarInventario(instruementos: Instrumento[]): boolean
+            +cerrarSesion(): void
+
+            }
+
+            class SistemaBeatTheRhythmImpl{
+            +instrumento: ListaInstrumento()
+
+            +SistemaBeatTheRhythmImpl()
+            }
+
+            }
+
+        Percusion --|> Instrumento
+        Viento --|> Instrumento
+        Cuerda --|> Instrumento
+        Instrumento "1" --o "*" ListaInstrumento
+        SistemaBeatTheRhythmImpl "1"-->"1" Instrumento : posee
+        SistemaBeatTheRhythmImpl "1"--> "1"ListaInstrumento : administra
+        SistemaBeatTheRhythmImpl ..|> SistemaBeatTheRhythm : implements
+
+}
+
+@enduml
