@@ -1,21 +1,26 @@
 package cl.disc.pa.taller.services;
 
+import java.io.IOException;
 import cl.disc.pa.taller.model.*;
 import com.opencsv.CSVWriter;
-
 import java.io.*;
 import java.util.Scanner;
 
+
+/**
+ * Clase donde se implementa el codigo de la clase SistemaBeatTheRhythm.
+ */
 public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
 
-    public static final String NOMBRE_ARCHIVO = "instrumentos.csv";
+    public ListaInstrumento listaInstrumento; // Lista Instrumento
+    public boolean sesionActiva; // Para verificar si la sesion esta activa al iniciar el taller
+    public static final String NOMBRE_ARCHIVO = "instrumentos.csv"; // archivo donde se almacenaran los datos de los intrumentos
     public static final String[] ENCABEZADO_ARCHIVO = {"Código", "Precio", "Stock", "Tipo de instrumento", "Tipo de cuerda",
-            "Número de cuerdas", "Material de construcción", "Tipo", "Tipo de percusión", "Altura"};
-    private boolean sesionActiva;
+            "Número de cuerdas", "Material de construcción", "Tipo", "Tipo de percusión", "Altura"}; // Encabezado del archivo csv
 
-    private ListaInstrumento listaInstrumento;
-
-
+    /**
+     * Constructor de la clase SistemaBeatTheRhythmImpl
+     */
     public SistemaBeatTheRhythmImpl() {
         listaInstrumento = new ListaInstrumento(10000);
         sesionActiva = false;
@@ -27,8 +32,8 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
      * @return true si el instrumento fue agregado correctamente, false en caso contrario.
      */
     public boolean agregarInstrumento() {
-        sesionActiva = true;
-        Scanner scanner = new Scanner(System.in);
+        sesionActiva = true; // Se activa la sesión
+        Scanner scanner = new Scanner(System.in); // Se crea un objeto Scanner para leer la entrada del usuario
         int opcion;
 
         do {
@@ -37,7 +42,7 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
             System.out.println("2. Viento");
             System.out.println("3. Percusión");
             System.out.print("Opción: ");
-            opcion = scanner.nextInt();
+            opcion = scanner.nextInt(); // Se lee la opción seleccionada por el usuario
             scanner.nextLine(); // Consumir el salto de línea pendiente
 
             if (opcion < 1 || opcion > 3) {
@@ -47,19 +52,23 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
 
         switch (opcion) {
             case 1:
-                agregarInstrumentoCuerda();
+                agregarInstrumentoCuerda(); // Se llama al método para agregar un instrumento de cuerda
                 break;
             case 2:
-                agregarInstrumentoViento();
+                agregarInstrumentoViento(); // Se llama al método para agregar un instrumento de viento
                 break;
             case 3:
-                agregarInstrumentoPercusion();
+                agregarInstrumentoPercusion(); // Se llama al método para agregar un instrumento de percusión
                 break;
         }
 
-        return false;
+        return false; // Se retorna false indicando que no se ha cerrado la sesión
     }
 
+    /**
+     * Agrega Instrumento cuerda al csv
+     * @return true si el instrumento fue agregado correctamente, false en caso contrario.
+     */
     public boolean agregarInstrumentoCuerda() {
         Scanner scanner = new Scanner(System.in);
 
@@ -221,7 +230,10 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         return agregado;
     }
 
-
+    /**
+     * Agrega Instrumento Percusion al csv
+     * @return true si el instrumento fue agregado correctamente, false en caso contrario.
+     */
     public boolean agregarInstrumentoPercusion() {
         Scanner scanner = new Scanner(System.in);
 
@@ -371,7 +383,10 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         return agregado;
     }
 
-
+    /**
+     * Agrega Instrumento Viento al csv
+     * @return true si el instrumento fue agregado correctamente, false en caso contrario.
+     */
     public boolean agregarInstrumentoViento() {
         Scanner scanner = new Scanner(System.in);
 
@@ -582,6 +597,7 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
             // En caso de que ocurra una excepción durante la escritura del archivo CSV, se muestra un mensaje de error y se imprime la traza de la excepción.
         }
     }
+
 
 
 
@@ -803,6 +819,7 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
     public boolean cerrarSesion() {
         System.out.println("Cerrando sesión...");
         guardarListaInstrumentosEnCSV(); // Guarda el archivo csv.
+        System.exit(0);
         return true;
     }
 

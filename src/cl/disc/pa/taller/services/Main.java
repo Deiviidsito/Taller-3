@@ -1,7 +1,5 @@
 package cl.disc.pa.taller.services;
 
-import cl.disc.pa.taller.services.SistemaBeatTheRhythmImpl;
-
 
 /**
  * Programacion avanzada 2023
@@ -20,11 +18,16 @@ import cl.disc.pa.taller.services.SistemaBeatTheRhythmImpl;
  *       Edgardo Ortiz Gonzales
  *
  */
+
+/**
+ * Clase principal main donde se ejecuta el codigo.
+ */
 public class Main {
     public static void main(String[] args) {
-
+        //Sistema principal .
         SistemaBeatTheRhythmImpl sistema = new SistemaBeatTheRhythmImpl();
 
+        // Inicar Sistema.
         sistema.iniciarSistema();
     }
 
