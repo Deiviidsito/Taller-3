@@ -9,7 +9,7 @@ Beat the Rhythm es una tienda de música familiar contratada para llevar a cabo 
 # Programacion avanzada 2023:
 :student: Integrantes:
 David Alvarez.
-Jonathan Morgaña.
+Jonathan Maragaño.
 
 :man_teacher: Profesor:
 Diego Urrutia.
