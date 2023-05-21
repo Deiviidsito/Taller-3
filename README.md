@@ -1,16 +1,36 @@
-# Taller3 - Beat the Rhythm
-![Logo](https://github.com/Deiviidsito/Taller3/assets/104799508/7af9a608-49ae-4eee-aad0-d826b0c6c5f9)
+## <div align="center">Taller 3 - Beat the Rhythm</div>
 
+<br>
+<div style ="display:flex;" align="center">
+  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/7af9a608-49ae-4eee-aad0-d826b0c6c5f9" style="width:350px"/>
+</div>
 Beat the Rhythm es una tienda de música familiar contratada para llevar a cabo su inventario.
+
+# Programacion avanzada 2023:
+Integrantes:
+David Alvarez 
+Jonathan Morgaña
+
+Profesor:
+Diego Urrutia
+
+Ayudantia:
+Edgardo Ortiz
 
 
 ## Menú principal
-
-![Menú principal](https://github.com/Deiviidsito/Taller3/assets/104799508/0855a0be-6fc3-498d-a0f9-5e6af5b04def)
+Aqui puedes ver las opciones que puedes seleccionar
+<br>
+<div style ="display:flex;" align="center">
+  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/0855a0be-6fc3-498d-a0f9-5e6af5b04def" style="width:350px"/>
+</div>
 
 ### 1. Agregar Instrumento
+<br>
+<div style ="display:flex;" align="center">
+  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/0508af1f-5b94-42bd-a5d3-0a55161feacf" style="width:350px"/>
+</div>
 
-![Agregar Instrumento](https://github.com/Deiviidsito/Taller3/assets/104799508/0508af1f-5b94-42bd-a5d3-0a55161feacf)
 
 #### 1.1 Selección de instrumento
 
@@ -28,16 +48,29 @@ Beat the Rhythm es una tienda de música familiar contratada para llevar a cabo 
 
 
 #### 1.2 Se agregó exitosamente
+<br>
+<div style ="display:flex;" align="center">
+  <img src="https://github.com/Deiviidsito/Taller3/blob/master/Imagenes/6.png?raw=true" style="width:350px"/>
+</div>
 
-![Se agregó exitosamente](https://github.com/Deiviidsito/Taller3/blob/master/Imagenes/6.png?raw=true)
 
 ### 2. Vender Instrumento
-![Codigo Vender](https://github.com/Deiviidsito/Taller3/assets/104799508/a1db5131-5753-4d1f-b40f-4439b58594a7)
+<br>
+<div style ="display:flex;" align="center">
+  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/a1db5131-5753-4d1f-b40f-4439b58594a7" style="width:350px"/>
+</div>
+
 #### 2.1 Se vendio exitosamente
-![Vendido](https://github.com/Deiviidsito/Taller3/assets/104799508/aa9fae12-7172-455d-8a57-edb059fabc19)
+<br>
+<div style ="display:flex;" align="center">
+  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/aa9fae12-7172-455d-8a57-edb059fabc19" style="width:350px"/>
+</div>
 
 ### 3. Consultar Inventario
-![Consultar Inventario](https://github.com/Deiviidsito/Taller3/assets/104799508/6abf65a5-3619-4b22-8bdd-7b92efa472ba)
+<br>
+<div style ="display:flex;" align="center">
+  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/6abf65a5-3619-4b22-8bdd-7b92efa472ba" style="width:350px"/>
+</div>
 
 #### 3.1 Se vendio exitosamente
 
