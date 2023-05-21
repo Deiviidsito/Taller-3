@@ -1,13 +1,15 @@
-package cl.disc.pa.taller;
+package cl.disc.pa.taller.model;
 
 import cl.disc.pa.taller.model.Cuerda;
 import cl.disc.pa.taller.model.Instrumento;
 
+
 public class Main {
     public static void main(String[] args) {
-        agregarInstrumento();
+
+        SistemaBeatTheRhythmImpl sistemaBeatTheRhythm = new SistemaBeatTheRhythmImpl();
+
+
     }
 
-    private static void agregarInstrumento() {
-    }
 }
