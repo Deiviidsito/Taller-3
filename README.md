@@ -17,6 +17,22 @@ Diego Urrutia.
 :teacher: Ayudantia:
 Edgardo Ortiz.
 
+## Diagrama de clases y Modelo Del Dominoo
+#### Diagrama de Clases
+<br>
+<div style ="display:flex;" align="center">
+  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/de81126f-75ac-44ac-b9d7-f74d83d1e7ba" style="width:950px"/>
+</div>
+
+#### Modelo del dominio
+<br>
+<div style ="display:flex;" align="center">
+  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/63c79b09-33f7-4f33-8f6b-55a8cfbb8986" style="width:350px"/>
+</div>
+
+
+
+
 
 ## Menú principal
 Aqui puedes ver las opciones que puedes seleccionar.
@@ -60,14 +76,14 @@ Su instrumento se agrego exitosamente al archivo instrumentos.csv.
 Se debe de ingresar el codigo del instrumento para vender el instrumento.
 <br>
 <div style ="display:flex;" align="center">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/a1db5131-5753-4d1f-b40f-4439b58594a7" style="width:350px"/>
+  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/a1db5131-5753-4d1f-b40f-4439b58594a7" style="width:550px"/>
 </div>
 
 #### 2.1 Se vendio exitosamente
 Si el codigo esta en la lista Instrumento y se ingreso, se vendio exitosamente.
 <br>
 <div style ="display:flex;" align="center">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/aa9fae12-7172-455d-8a57-edb059fabc19" style="width:350px"/>
+  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/aa9fae12-7172-455d-8a57-edb059fabc19" style="width:650px"/>
 </div>
 
 ## 3. Consultar Inventario
@@ -81,15 +97,16 @@ Se despliega un submenu y seleccionas la opcion que quieres.
 
 <br>
 <div style ="display:flex;" align="center">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/b20cbca9-2630-46e7-9e2d-d715974aa17f" style="width:350px"/>
+  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/b20cbca9-2630-46e7-9e2d-d715974aa17f" style="width:550px"/>
 </div>
 
 ## 4. Archivo VSC
-
+Visualizacion del archivo VSC
 <br>
 <div style ="display:flex;" align="center">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/b20cbca9-2630-46e7-9e2d-d715974aa17f" style="width:350px"/>
+  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/6f9dde79-32c1-4b40-ae95-c59ca81cd843" style="width:750px"/>
 </div>
+
 
 
 
