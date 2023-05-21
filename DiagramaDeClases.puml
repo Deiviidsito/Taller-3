@@ -68,7 +68,7 @@ package cl.ucn.disc.pa.beattherhythm{
             package services {
 
             interface SistemaBeatTheRhythm <<interface>>{
-            +agregarInstrumentoCuerda(codigo: int, precio: int, stock: int, tipoInstrumento: String): boolean
+            +agregarInstrumentoCuerda(): boolean
             +venderInstrumento(codigo: int): boolean
             +consultarInventario(instruementos: Instrumento[]): boolean
             +cerrarSesion(): void

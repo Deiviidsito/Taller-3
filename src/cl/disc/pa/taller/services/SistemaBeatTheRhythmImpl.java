@@ -1,8 +1,7 @@
-package cl.disc.pa.taller.model;
+package cl.disc.pa.taller.services;
 
-import com.opencsv.CSVReader;
+import cl.disc.pa.taller.model.*;
 import com.opencsv.CSVWriter;
-import com.opencsv.exceptions.CsvValidationException;
 
 import java.io.*;
 import java.util.Scanner;
@@ -22,7 +21,11 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         sesionActiva = false;
     }
 
-
+    /**
+     * Agrega un nuevo instrumento al sistema.
+     *
+     * @return true si el instrumento fue agregado correctamente, false en caso contrario.
+     */
     public boolean agregarInstrumento() {
         sesionActiva = true;
         Scanner scanner = new Scanner(System.in);
@@ -197,7 +200,7 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         return agregado;
     }
 
-    @Override
+
     public boolean agregarInstrumentoPercusion() {
         Scanner scanner = new Scanner(System.in);
 
@@ -322,7 +325,7 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         return agregado;
     }
 
-    @Override
+
     public boolean agregarInstrumentoViento() {
         Scanner scanner = new Scanner(System.in);
 
@@ -422,6 +425,9 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         return agregado;
     }
 
+    /**
+     * Guarda la lista de instrumentos en un archivo CSV.
+     */
     public void guardarListaInstrumentosEnCSV() {
         try (CSVWriter writer = new CSVWriter(new FileWriter(NOMBRE_ARCHIVO))) {
             writer.writeNext(ENCABEZADO_ARCHIVO);
@@ -483,6 +489,11 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
     }
 
 
+    /**
+     * Realiza la venta de un instrumento.
+     *
+     * @return true si la venta fue realizada correctamente, false en caso contrario.
+     */
     @Override
     public boolean venderInstrumento() {
         Scanner scanner = new Scanner(System.in);
@@ -506,6 +517,11 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         }
     }
 
+    /**
+     * Consulta el inventario de instrumentos disponibles.
+     *
+     * @return true si la consulta fue exitosa, false en caso contrario.
+     */
     @Override
     public boolean consultarInventario() {
         Scanner scanner = new Scanner(System.in);
@@ -642,6 +658,11 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         return true;
     }
 
+    /**
+     * Cierra la sesión activa en el sistema.
+     *
+     * @return true si se cerró la sesión correctamente, false en caso contrario.
+     */
     @Override
     public boolean cerrarSesion() {
         System.out.println("Cerrando sesión...");
@@ -650,6 +671,11 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
     }
 
 
+    /**
+     * Inicia el sistema de la tienda de Instrumentos.
+     *
+     * @return true si se inicio la sesión correctamente, false en caso contrario.
+     */
     public void iniciarSistema() {
         sesionActiva = true;
 
@@ -681,6 +707,9 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         }
     }
 
+    /**
+     * Muestra el menu principal.
+     */
     private void mostrarMenu() {
         System.out.println("████████╗ █████╗ ██╗     ██╗     ███████╗██████╗  ");
         System.out.println("╚══██╔══╝██╔══██╗██║     ██║     ██╔════╝██╔══██╗ ");
