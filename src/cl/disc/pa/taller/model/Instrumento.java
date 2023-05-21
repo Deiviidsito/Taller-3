@@ -11,6 +11,7 @@ public class Instrumento {
         this.stock = stock;
     }
 
+
     public int getCodigo() {
         return codigo;
     }
@@ -33,5 +34,14 @@ public class Instrumento {
 
     public void setStock(int stock) {
         this.stock = stock;
+    }
+
+    public String getInstrumento() {
+        return null;
+    }
+
+
+    public String getTipoInstrumento() {
+        return getTipoInstrumento();
     }
 }

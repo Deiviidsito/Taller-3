@@ -1,15 +1,25 @@
 package cl.disc.pa.taller.model;
 
+import com.opencsv.exceptions.CsvValidationException;
+
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public interface SistemaBeatTheRhythm {
 
-    boolean agregarInstrumento(Cuerda instrumentoCuerda);
-    boolean agregarInstrumento(Percusion instrumentoPercusion);
-    boolean agregarInstrumento(Viento instrumentoViento);
     boolean agregarInstrumento();
+    boolean agregarInstrumentoCuerda();
+
+    boolean agregarInstrumentoViento();
+
+    boolean agregarInstrumentoPercusion();
+
+    void guardarListaInstrumentosEnCSV();
+
     boolean venderInstrumento();
     boolean consultarInventario();
-    void cerrarSesion();
+    boolean cerrarSesion();
+
 }
 

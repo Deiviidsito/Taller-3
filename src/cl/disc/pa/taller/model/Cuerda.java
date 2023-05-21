@@ -16,6 +16,8 @@ public class Cuerda extends Instrumento{
         this.tipo = tipo;
     }
 
+
+
     public String getTipoInstrumento() {
         return tipoInstrumento;
     }

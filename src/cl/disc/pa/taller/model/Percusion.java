@@ -14,6 +14,7 @@ public class Percusion extends Instrumento{
         this.altura = altura;
     }
 
+
     public String getTipoInstrumento() {
         return tipoInstrumento;
     }
