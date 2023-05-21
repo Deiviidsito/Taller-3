@@ -34,7 +34,9 @@ apellido
 rut
 }
 
+
 trabajador "1" -- "1..*" Cuerda : administra >
 trabajador "1" -- "1..*" Percusion : administra >
 trabajador "1" -- "1..*" Viento : administra >
+
 @enduml
