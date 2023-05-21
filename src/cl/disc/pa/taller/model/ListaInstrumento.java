@@ -2,6 +2,7 @@ package cl.disc.pa.taller.model;
 import com.opencsv.CSVWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Lista de instrumento, almacena todos los tipos de instrumentos.
@@ -130,6 +131,9 @@ public class ListaInstrumento {
      */
     public int getCant_actual() {
         return cant_actual;
+    }
+
+    public void setInstrumentos(List<Instrumento> listaInstrumentos) {
     }
 
 
