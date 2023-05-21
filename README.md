@@ -64,7 +64,7 @@ Seleccionar que instrumento quieres agregar: Cuerda / Viento / Percusion.
 </div>
 
 
-#### 1.2 Se agregó exitosamente
+#### 1.2 Se agregó exitosamente :chart:
 Su instrumento se agrego exitosamente al archivo instrumentos.csv.
 <br>
 <div style ="display:flex;" align="center">
@@ -78,15 +78,15 @@ Se debe de ingresar el codigo del instrumento para vender el instrumento.
 <div style ="display:flex;" align="center">
   <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/a1db5131-5753-4d1f-b40f-4439b58594a7" style="width:550px"/>
 </div>
-
-#### 2.1 Se vendio exitosamente
+ 
+#### 2.1 Se vendio exitosamente :chart:
 Si el codigo esta en la lista Instrumento y se ingreso, se vendio exitosamente.
 <br>
 <div style ="display:flex;" align="center">
   <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/aa9fae12-7172-455d-8a57-edb059fabc19" style="width:650px"/>
 </div>
 
-## 3. Consultar Inventario
+## 3. Consultar Inventario :envelope_with_arrow:
 Se despliega un submenu y seleccionas la opcion que quieres.
 <br>
 <div style ="display:flex;" align="center">
