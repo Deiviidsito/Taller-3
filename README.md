@@ -80,7 +80,7 @@ Se debe de ingresar el codigo del instrumento para vender el instrumento.
 </div>
  
 #### 2.1 Se vendio exitosamente :chart:
-Si el codigo esta en la lista Instrumento y se ingreso, se vendio exitosamente.
+Si el codigo esta en el archivo instrumentos.csv, se vendio exitosamente.
 <br>
 <div style ="display:flex;" align="center">
   <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/aa9fae12-7172-455d-8a57-edb059fabc19" style="width:650px"/>
