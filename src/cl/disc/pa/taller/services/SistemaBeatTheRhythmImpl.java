@@ -66,120 +66,141 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         System.out.println("Ingrese los datos del instrumento de cuerda:");
 
         // Validación del campo Código
-        int codigo;
-        while (true) {
-            System.out.print("Código: ");
-            String codigoStr = scanner.nextLine();
-            try {
-                codigo = Integer.parseInt(codigoStr);
-                if (codigo > 0) {
-                    break;
+        int codigo; // Declara una variable llamada "codigo" de tipo entero.
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Código: "); // Muestra en la consola el mensaje "Código: ".
+            String codigoStr = scanner.nextLine(); // Lee la entrada del usuario y la guarda en una variable llamada "codigoStr" de tipo cadena (String).
+
+            try { // Inicia un bloque try-catch para manejar excepciones.
+                codigo = Integer.parseInt(codigoStr); // Intenta convertir la cadena "codigoStr" a un número entero y asignarlo a la variable "codigo".
+
+                if (codigo > 0) { // Comprueba si el valor de "codigo" es mayor que cero.
+                    break; // Si es mayor que cero, sale del bucle.
                 } else {
-                    System.out.println("Error: El código debe ser un número mayor que cero. Intente nuevamente.");
+                    System.out.println("Error: El código debe ser un número mayor que cero. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que el código debe ser un número mayor que cero.
                 }
-            } catch (NumberFormatException e) {
-                System.out.println("Error: Solo se permiten números. Intente nuevamente.");
+            } catch (NumberFormatException e) { // Captura la excepción si la conversión a entero falla.
+                System.out.println("Error: Solo se permiten números. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que solo se permiten números.
             }
         }
 
         // Validación del campo Precio
-        int precio;
-        while (true) {
-            System.out.print("Precio: ");
-            String precioStr = scanner.nextLine();
-            try {
-                precio = Integer.parseInt(precioStr);
-                if (precio > 0) {
-                    break;
+        int precio; // Declara una variable llamada "precio" de tipo entero.
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Precio: "); // Muestra en la consola el mensaje "Precio: ".
+            String precioStr = scanner.nextLine(); // Lee la entrada del usuario y la guarda en una variable llamada "precioStr" de tipo cadena (String).
+
+            try { // Inicia un bloque try-catch para manejar excepciones.
+                precio = Integer.parseInt(precioStr); // Intenta convertir la cadena "precioStr" a un número entero y asignarlo a la variable "precio".
+
+                if (precio > 0) { // Comprueba si el valor de "precio" es mayor que cero.
+                    break; // Si es mayor que cero, sale del bucle.
                 } else {
-                    System.out.println("Error: El precio debe ser un número mayor que cero. Intente nuevamente.");
+                    System.out.println("Error: El precio debe ser un número mayor que cero. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que el precio debe ser un número mayor que cero.
                 }
-            } catch (NumberFormatException e) {
-                System.out.println("Error: Solo se permiten números. Intente nuevamente.");
+            } catch (NumberFormatException e) { // Captura la excepción si la conversión a entero falla.
+                System.out.println("Error: Solo se permiten números. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que solo se permiten números.
             }
         }
 
+
         // Validación del campo Stock
-        int stock;
-        while (true) {
-            System.out.print("Stock: ");
-            String stockStr = scanner.nextLine();
-            try {
-                stock = Integer.parseInt(stockStr);
-                if (stock > 0) {
-                    break;
+        int stock; // Declara una variable llamada "stock" de tipo entero.
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Stock: "); // Muestra en la consola el mensaje "Stock: ".
+            String stockStr = scanner.nextLine(); // Lee la entrada del usuario y la guarda en una variable llamada "stockStr" de tipo cadena (String).
+
+            try { // Inicia un bloque try-catch para manejar excepciones.
+                stock = Integer.parseInt(stockStr); // Intenta convertir la cadena "stockStr" a un número entero y asignarlo a la variable "stock".
+
+                if (stock > 0) { // Comprueba si el valor de "stock" es mayor que cero.
+                    break; // Si es mayor que cero, sale del bucle.
                 } else {
-                    System.out.println("Error: El stock debe ser un número mayor que cero. Intente nuevamente.");
+                    System.out.println("Error: El stock debe ser un número mayor que cero. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que el stock debe ser un número mayor que cero.
                 }
-            } catch (NumberFormatException e) {
-                System.out.println("Error: Solo se permiten números. Intente nuevamente.");
+            } catch (NumberFormatException e) { // Captura la excepción si la conversión a entero falla.
+                System.out.println("Error: Solo se permiten números. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que solo se permiten números.
             }
         }
 
         // Validación del campo Tipo de instrumento
-        String tipoInstrumento;
-        while (true) {
-            System.out.print("Tipo de instrumento (Guitarra, Bajo, Violín, Arpa): ");
-            tipoInstrumento = scanner.nextLine();
+        String tipoInstrumento; // Declara una variable llamada "tipoInstrumento" de tipo cadena (String).
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Tipo de instrumento (Guitarra, Bajo, Violin, Arpa): "); // Muestra en la consola el mensaje "Tipo de instrumento (Guitarra, Bajo, Violín, Arpa): ".
+            tipoInstrumento = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "tipoInstrumento".
+
             if (tipoInstrumento.equalsIgnoreCase("Guitarra") || tipoInstrumento.equalsIgnoreCase("Bajo")
-                    || tipoInstrumento.equalsIgnoreCase("Violín") || tipoInstrumento.equalsIgnoreCase("Arpa")) {
-                break;
+                    || tipoInstrumento.equalsIgnoreCase("Violin") || tipoInstrumento.equalsIgnoreCase("Arpa")) {
+                break; // Si el tipo de instrumento ingresado coincide con alguno de los valores permitidos (ignorando mayúsculas y minúsculas), se sale del bucle.
             } else {
-                System.out.println("Error: Coloque un tipo de instrumento válido. Intente nuevamente.");
+                System.out.println("Error: Coloque un tipo de instrumento válido. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que se debe ingresar un tipo de instrumento válido.
             }
         }
 
         // Validación del campo Tipo de cuerda
-        String tipoCuerda;
-        while (true) {
-            System.out.print("Tipo de cuerda (Nylon, acero, tripa): ");
-            tipoCuerda = scanner.nextLine();
+        String tipoCuerda; // Declara una variable llamada "tipoCuerda" de tipo cadena (String).
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Tipo de cuerda (Nylon, acero, tripa): "); // Muestra en la consola el mensaje "Tipo de cuerda (Nylon, acero, tripa): ".
+            tipoCuerda = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "tipoCuerda".
+
             if (tipoCuerda.equalsIgnoreCase("Nylon") || tipoCuerda.equalsIgnoreCase("acero")
                     || tipoCuerda.equalsIgnoreCase("tripa")) {
-                break;
+                break; // Si el tipo de cuerda ingresado coincide con alguno de los valores permitidos (ignorando mayúsculas y minúsculas), se sale del bucle.
             } else {
-                System.out.println("Error: Coloque un tipo de cuerda válido. Intente nuevamente.");
+                System.out.println("Error: Coloque un tipo de cuerda válido. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que se debe ingresar un tipo de cuerda válido.
             }
         }
 
         // Validación del campo Número de cuerdas
-        int numeroCuerdas;
-        while (true) {
-            System.out.print("Número de cuerdas: ");
-            String numeroCuerdasStr = scanner.nextLine();
-            try {
-                numeroCuerdas = Integer.parseInt(numeroCuerdasStr);
-                if (numeroCuerdas > 0) {
-                    break;
+        int numeroCuerdas; // Declara una variable llamada "numeroCuerdas" de tipo entero.
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Número de cuerdas: "); // Muestra en la consola el mensaje "Número de cuerdas: ".
+            String numeroCuerdasStr = scanner.nextLine(); // Lee la entrada del usuario y la guarda en una variable llamada "numeroCuerdasStr" de tipo cadena (String).
+
+            try { // Inicia un bloque try-catch para manejar excepciones.
+                numeroCuerdas = Integer.parseInt(numeroCuerdasStr); // Intenta convertir la cadena "numeroCuerdasStr" a un número entero y asignarlo a la variable "numeroCuerdas".
+
+                if (numeroCuerdas > 0) { // Comprueba si el valor de "numeroCuerdas" es mayor que cero.
+                    break; // Si es mayor que cero, sale del bucle.
                 } else {
-                    System.out.println("Error: El número de cuerdas debe ser un número mayor que cero. Intente nuevamente.");
+                    System.out.println("Error: El número de cuerdas debe ser un número mayor que cero. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que el número de cuerdas debe ser un número mayor que cero.
                 }
-            } catch (NumberFormatException e) {
-                System.out.println("Error: Solo se permiten números. Intente nuevamente.");
+            } catch (NumberFormatException e) { // Captura la excepción si la conversión a entero falla.
+                System.out.println("Error: Solo se permiten números. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que solo se permiten números.
             }
         }
 
         // Validación del campo Material de construcción
-        String materialConstruccion;
-        while (true) {
-            System.out.print("Material de construcción (madera, metal): ");
-            materialConstruccion = scanner.nextLine();
+        String materialConstruccion; // Declara una variable llamada "materialConstruccion" de tipo cadena (String).
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Material de construcción (madera, metal): "); // Muestra en la consola el mensaje "Material de construcción (madera, metal): ".
+            materialConstruccion = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "materialConstruccion".
+
             if (materialConstruccion.equalsIgnoreCase("madera") || materialConstruccion.equalsIgnoreCase("metal")) {
-                break;
+                break; // Si el material de construcción ingresado coincide con alguno de los valores permitidos (ignorando mayúsculas y minúsculas), se sale del bucle.
             } else {
-                System.out.println("Error: Coloque un tipo de material válido. Intente nuevamente.");
+                System.out.println("Error: Coloque un tipo de material válido. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que se debe ingresar un tipo de material válido.
             }
         }
 
         // Validación del campo Tipo
-        String tipo;
-        while (true) {
-            System.out.print("Tipo (acustico, electrico): ");
-            tipo = scanner.nextLine();
+        String tipo; // Declara una variable llamada "tipo" de tipo cadena (String).
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Tipo (acustico, electrico): "); // Muestra en la consola el mensaje "Tipo (acustico, electrico): ".
+            tipo = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "tipo".
+
             if (tipo.equalsIgnoreCase("acustico") || tipo.equalsIgnoreCase("electrico")) {
-                break;
+                break; // Si el tipo ingresado coincide con alguno de los valores permitidos (ignorando mayúsculas y minúsculas), se sale del bucle.
             } else {
-                System.out.println("Error: Coloque un tipo válido. Intente nuevamente.");
+                System.out.println("Error: Coloque un tipo válido. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que se debe ingresar un tipo válido.
             }
         }
 
@@ -205,106 +226,131 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Ingrese los datos del instrumento de viento:");
+
         // Validación del campo Código
-        int codigo;
-        while (true) {
-            System.out.print("Código: ");
-            String codigoStr = scanner.nextLine();
-            try {
-                codigo = Integer.parseInt(codigoStr);
-                if (codigo > 0) {
-                    break;
+        int codigo; // Declara una variable llamada "codigo" de tipo entero.
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Código: "); // Muestra en la consola el mensaje "Código: ".
+            String codigoStr = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "codigoStr" de tipo cadena (String).
+
+            try { // Inicia un bloque try-catch para manejar excepciones.
+                codigo = Integer.parseInt(codigoStr); // Intenta convertir la cadena "codigoStr" a un número entero y asignarlo a la variable "codigo".
+
+                if (codigo > 0) { // Comprueba si el valor de "codigo" es mayor que cero.
+                    break; // Si es mayor que cero, sale del bucle.
                 } else {
-                    System.out.println("Error: El código debe ser un número mayor que cero. Intente nuevamente.");
+                    System.out.println("Error: El código debe ser un número mayor que cero. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que el código debe ser un número mayor que cero.
                 }
-            } catch (NumberFormatException e) {
-                System.out.println("Error: Solo se permiten números. Intente nuevamente.");
+            } catch (NumberFormatException e) { // Captura la excepción si la conversión a entero falla.
+                System.out.println("Error: Solo se permiten números. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que solo se permiten números.
             }
         }
+
 
         // Validación del campo Precio
-        int precio;
-        while (true) {
-            System.out.print("Precio: ");
-            String precioStr = scanner.nextLine();
-            try {
-                precio = Integer.parseInt(precioStr);
-                if (precio > 0) {
-                    break;
+        int precio; // Declara una variable llamada "precio" de tipo entero.
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Precio: "); // Muestra en la consola el mensaje "Precio: ".
+            String precioStr = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "precioStr" de tipo cadena (String).
+
+            try { // Inicia un bloque try-catch para manejar excepciones.
+                precio = Integer.parseInt(precioStr); // Intenta convertir la cadena "precioStr" a un número entero y asignarlo a la variable "precio".
+
+                if (precio > 0) { // Comprueba si el valor de "precio" es mayor que cero.
+                    break; // Si es mayor que cero, sale del bucle.
                 } else {
-                    System.out.println("Error: El precio debe ser un número mayor que cero. Intente nuevamente.");
+                    System.out.println("Error: El precio debe ser un número mayor que cero. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que el precio debe ser un número mayor que cero.
                 }
-            } catch (NumberFormatException e) {
-                System.out.println("Error: Solo se permiten números. Intente nuevamente.");
+            } catch (NumberFormatException e) { // Captura la excepción si la conversión a entero falla.
+                System.out.println("Error: Solo se permiten números. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que solo se permiten números.
             }
         }
+
 
         // Validación del campo Stock
-        int stock;
-        while (true) {
-            System.out.print("Stock: ");
-            String stockStr = scanner.nextLine();
-            try {
-                stock = Integer.parseInt(stockStr);
-                if (stock > 0) {
-                    break;
+        int stock; // Declara una variable llamada "stock" de tipo entero.
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Stock: "); // Muestra en la consola el mensaje "Stock: ".
+            String stockStr = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "stockStr" de tipo cadena (String).
+
+            try { // Inicia un bloque try-catch para manejar excepciones.
+                stock = Integer.parseInt(stockStr); // Intenta convertir la cadena "stockStr" a un número entero y asignarlo a la variable "stock".
+
+                if (stock > 0) { // Comprueba si el valor de "stock" es mayor que cero.
+                    break; // Si es mayor que cero, sale del bucle.
                 } else {
-                    System.out.println("Error: El stock debe ser un número mayor que cero. Intente nuevamente.");
+                    System.out.println("Error: El stock debe ser un número mayor que cero. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que el stock debe ser un número mayor que cero.
                 }
-            } catch (NumberFormatException e) {
-                System.out.println("Error: Solo se permiten números. Intente nuevamente.");
+            } catch (NumberFormatException e) { // Captura la excepción si la conversión a entero falla.
+                System.out.println("Error: Solo se permiten números. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que solo se permiten números.
             }
         }
 
+
         // Validacion de Tipo De Instrumento
-        String tipoInstrumento;
-        while (true) {
-            System.out.print("Tipo de instrumento (Bongo, Cajon, Campanas Tubulares, Bombo): ");
-            tipoInstrumento = scanner.nextLine();
+        String tipoInstrumento; // Declara una variable llamada "tipoInstrumento" de tipo cadena (String).
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Tipo de instrumento (Bongo, Cajon, Campanas Tubulares, Bombo): "); // Muestra en la consola el mensaje "Tipo de instrumento (Bongo, Cajon, Campanas Tubulares, Bombo): ".
+            tipoInstrumento = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "tipoInstrumento".
+
             if (tipoInstrumento.equalsIgnoreCase("Bongo") || tipoInstrumento.equalsIgnoreCase("Cajon")
                     || tipoInstrumento.equalsIgnoreCase("Campanas Tubulares") || tipoInstrumento.equalsIgnoreCase("Bombo")) {
-                break;
+                break; // Si el tipo de instrumento ingresado coincide con alguno de los valores permitidos (ignorando mayúsculas y minúsculas), se sale del bucle.
             } else {
-                System.out.println("Error: Coloque un tipo de instrumento válido. Intente nuevamente.");
+                System.out.println("Error: Coloque un tipo de instrumento válido. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que se debe ingresar un tipo de instrumento válido.
             }
         }
+
 
 
         // Validacion de Tipo De Percusion
-        String tipoPercusion;
-        while (true) {
-            System.out.print("Tipo de Percusion (Membranofono, idiofono): ");
-            tipoPercusion = scanner.nextLine();
+        String tipoPercusion; // Declara una variable llamada "tipoPercusion" de tipo cadena (String).
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Tipo de Percusion (Membranofono, idiofono): "); // Muestra en la consola el mensaje "Tipo de Percusion (Membranofono, idiofono): ".
+            tipoPercusion = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "tipoPercusion".
+
             if (tipoPercusion.equalsIgnoreCase("Membranofono") || tipoPercusion.equalsIgnoreCase("idiofono")) {
-                break;
+                break; // Si el tipo de percusión ingresado coincide con alguno de los valores permitidos (ignorando mayúsculas y minúsculas), se sale del bucle.
             } else {
-                System.out.println("Error: Coloque un tipo de Percusion válido. Intente nuevamente.");
+                System.out.println("Error: Coloque un tipo de Percusion válido. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que se debe ingresar un tipo de percusión válido.
             }
         }
+
 
         // Validación de Material de construcción
-        String materialDeConstruccion;
-        while (true) {
-            System.out.print("Material de construcción (madera, metal, piel): ");
-            materialDeConstruccion = scanner.nextLine();
+        String materialDeConstruccion; // Declara una variable llamada "materialDeConstruccion" de tipo cadena (String).
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Material de construcción (madera, metal, piel): "); // Muestra en la consola el mensaje "Material de construcción (madera, metal, piel): ".
+            materialDeConstruccion = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "materialDeConstruccion".
+
             if (materialDeConstruccion.equalsIgnoreCase("madera") || materialDeConstruccion.equalsIgnoreCase("metal") ||
                     materialDeConstruccion.equalsIgnoreCase("piel")) {
-                break;
+                break; // Si el material de construcción ingresado coincide con alguno de los valores permitidos (ignorando mayúsculas y minúsculas), se sale del bucle.
             } else {
-                System.out.println("Error: Coloque un tipo de material válido. Intente nuevamente.");
+                System.out.println("Error: Coloque un tipo de material válido. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que se debe ingresar un tipo de material válido.
             }
         }
 
-        String altura;
-        while (true) {
-            System.out.print("Altura (definida, indefinida): ");
-            altura = scanner.nextLine();
+        // Validación de Altura
+        String altura; // Declara una variable llamada "altura" de tipo cadena (String).
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Altura (definida, indefinida): "); // Muestra en la consola el mensaje "Altura (definida, indefinida): ".
+            altura = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "altura".
+
             if (altura.equalsIgnoreCase("definida") || altura.equalsIgnoreCase("indefinida")) {
-                break;
+                break; // Si la altura ingresada coincide con alguno de los valores permitidos (ignorando mayúsculas y minúsculas), se sale del bucle.
             } else {
-                System.out.println("Error: Coloque un tipo de altura válido. Intente nuevamente.");
+                System.out.println("Error: Coloque un tipo de altura válido. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que se debe ingresar un tipo de altura válido.
             }
         }
+
 
 
         // Crear el objeto Percusion con los datos ingresados
@@ -330,81 +376,99 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Ingrese los datos del instrumento de viento:");
+
         // Validación del campo Código
-        int codigo;
-        while (true) {
-            System.out.print("Código: ");
-            String codigoStr = scanner.nextLine();
-            try {
-                codigo = Integer.parseInt(codigoStr);
-                if (codigo > 0) {
-                    break;
+        int codigo; // Declara una variable llamada "codigo" de tipo entero.
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Código: "); // Muestra en la consola el mensaje "Código: ".
+            String codigoStr = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "codigoStr" de tipo cadena (String).
+
+            try { // Inicia un bloque try-catch para manejar excepciones.
+                codigo = Integer.parseInt(codigoStr); // Intenta convertir la cadena "codigoStr" a un número entero y asignarlo a la variable "codigo".
+
+                if (codigo > 0) { // Comprueba si el valor de "codigo" es mayor que cero.
+                    break; // Si es mayor que cero, sale del bucle.
                 } else {
-                    System.out.println("Error: El código debe ser un número mayor que cero. Intente nuevamente.");
+                    System.out.println("Error: El código debe ser un número mayor que cero. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que el código debe ser un número mayor que cero.
                 }
-            } catch (NumberFormatException e) {
-                System.out.println("Error: Solo se permiten números. Intente nuevamente.");
+            } catch (NumberFormatException e) { // Captura la excepción si la conversión a entero falla.
+                System.out.println("Error: Solo se permiten números. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que solo se permiten números.
             }
         }
+
 
         // Validación del campo Precio
-        int precio;
-        while (true) {
-            System.out.print("Precio: ");
-            String precioStr = scanner.nextLine();
-            try {
-                precio = Integer.parseInt(precioStr);
-                if (precio > 0) {
-                    break;
+        int precio; // Declara una variable llamada "precio" de tipo entero.
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Precio: "); // Muestra en la consola el mensaje "Precio: ".
+            String precioStr = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "precioStr" de tipo cadena (String).
+
+            try { // Inicia un bloque try-catch para manejar excepciones.
+                precio = Integer.parseInt(precioStr); // Intenta convertir la cadena "precioStr" a un número entero y asignarlo a la variable "precio".
+
+                if (precio > 0) { // Comprueba si el valor de "precio" es mayor que cero.
+                    break; // Si es mayor que cero, sale del bucle.
                 } else {
-                    System.out.println("Error: El precio debe ser un número mayor que cero. Intente nuevamente.");
+                    System.out.println("Error: El precio debe ser un número mayor que cero. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que el precio debe ser un número mayor que cero.
                 }
-            } catch (NumberFormatException e) {
-                System.out.println("Error: Solo se permiten números. Intente nuevamente.");
+            } catch (NumberFormatException e) { // Captura la excepción si la conversión a entero falla.
+                System.out.println("Error: Solo se permiten números. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que solo se permiten números.
             }
         }
 
+
         // Validación del campo Stock
-        int stock;
-        while (true) {
-            System.out.print("Stock: ");
-            String stockStr = scanner.nextLine();
-            try {
-                stock = Integer.parseInt(stockStr);
-                if (stock > 0) {
-                    break;
+        int stock; // Declara una variable llamada "stock" de tipo entero.
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Stock: "); // Muestra en la consola el mensaje "Stock: ".
+            String stockStr = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "stockStr" de tipo cadena (String).
+
+            try { // Inicia un bloque try-catch para manejar excepciones.
+                stock = Integer.parseInt(stockStr); // Intenta convertir la cadena "stockStr" a un número entero y asignarlo a la variable "stock".
+
+                if (stock > 0) { // Comprueba si el valor de "stock" es mayor que cero.
+                    break; // Si es mayor que cero, sale del bucle.
                 } else {
-                    System.out.println("Error: El stock debe ser un número mayor que cero. Intente nuevamente.");
+                    System.out.println("Error: El stock debe ser un número mayor que cero. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que el stock debe ser un número mayor que cero.
                 }
-            } catch (NumberFormatException e) {
-                System.out.println("Error: Solo se permiten números. Intente nuevamente.");
+            } catch (NumberFormatException e) { // Captura la excepción si la conversión a entero falla.
+                System.out.println("Error: Solo se permiten números. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que solo se permiten números.
             }
         }
 
         // Validacion de Tipo De Instrumento
-        String tipoInstrumento;
-        while (true) {
-            System.out.print("Tipo de instrumento (Trompeta, Saxofon, Clarinete, Flauta traversa): ");
-            tipoInstrumento = scanner.nextLine();
+        String tipoInstrumento; // Declara una variable llamada "tipoInstrumento" de tipo cadena (String).
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Tipo de instrumento (Trompeta, Saxofon, Clarinete, Flauta traversa): "); // Muestra en la consola el mensaje "Tipo de instrumento (Trompeta, Saxofon, Clarinete, Flauta traversa): ".
+            tipoInstrumento = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "tipoInstrumento".
+
             if (tipoInstrumento.equalsIgnoreCase("Trompeta") || tipoInstrumento.equalsIgnoreCase("Saxofon")
                     || tipoInstrumento.equalsIgnoreCase("Clarinete") || tipoInstrumento.equalsIgnoreCase("Flauta traversa")) {
-                break;
+                break; // Si el tipo de instrumento ingresado coincide con alguno de los valores permitidos (ignorando mayúsculas y minúsculas), se sale del bucle.
             } else {
-                System.out.println("Error: Coloque un tipo de instrumento válido. Intente nuevamente.");
+                System.out.println("Error: Coloque un tipo de instrumento válido. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que se debe ingresar un tipo de instrumento válido.
             }
         }
 
+
         // Validación de Material de construcción
-        String material;
-        while (true) {
-            System.out.print("Material de construcción (madera, metal, piel): ");
-            material = scanner.nextLine();
+        String material; // Declara una variable llamada "material" de tipo cadena (String).
+
+        while (true) { // Inicia un bucle infinito.
+            System.out.print("Material de construcción (madera, metal, piel): "); // Muestra en la consola el mensaje "Material de construcción (madera, metal, piel): ".
+            material = scanner.nextLine(); // Lee la entrada del usuario y la guarda en la variable "material".
+
             if (material.equalsIgnoreCase("madera") || material.equalsIgnoreCase("metal")) {
-                break;
+                break; // Si el material ingresado coincide con alguno de los valores permitidos (ignorando mayúsculas y minúsculas), se sale del bucle.
             } else {
-                System.out.println("Error: Coloque un tipo de material válido. Intente nuevamente.");
+                System.out.println("Error: Coloque un tipo de material válido. Intente nuevamente."); // Muestra en la consola un mensaje de error indicando que se debe ingresar un tipo de material válido.
             }
         }
+
 
 
         // Crear el objeto Viento con los datos ingresados
@@ -430,11 +494,20 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
      */
     public void guardarListaInstrumentosEnCSV() {
         try (CSVWriter writer = new CSVWriter(new FileWriter(NOMBRE_ARCHIVO))) {
+            // Abre un flujo de escritura para el archivo CSV utilizando un objeto FileWriter y lo asocia con un objeto CSVWriter.
+
             writer.writeNext(ENCABEZADO_ARCHIVO);
+            // Escribe la linea de encabezado en el archivo CSV utilizando el objeto CSVWriter.
 
             for (Instrumento instrumento : listaInstrumento.getInstrumentos()) {
+                // Itera sobre cada instrumento en la lista de instrumentos.
+
                 if (instrumento instanceof Cuerda) {
+                    // Verifica si el instrumento es una instancia de la clase Cuerda.
+
                     Cuerda cuerda = (Cuerda) instrumento;
+                    // Realiza un casting del instrumento a la clase Cuerda para acceder a sus métodos específicos.
+
                     String[] datos = {
                             String.valueOf(cuerda.getCodigo()),
                             String.valueOf(cuerda.getPrecio()),
@@ -447,9 +520,17 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
                             "",
                             ""
                     };
+                    // Crea un arreglo de cadenas con los datos del instrumento Cuerda.
+
                     writer.writeNext(datos);
+                    // Escribe una línea en el archivo CSV con los datos del instrumento Cuerda.
+
                 } else if (instrumento instanceof Percusion) {
+                    // Verifica si el instrumento es una instancia de la clase Percusion.
+
                     Percusion percusion = (Percusion) instrumento;
+                    // Realiza un casting del instrumento a la clase Percusion para acceder a sus métodos específicos.
+
                     String[] datos = {
                             String.valueOf(percusion.getCodigo()),
                             String.valueOf(percusion.getPrecio()),
@@ -462,9 +543,17 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
                             percusion.getTipoPercusion(),
                             percusion.getAltura()
                     };
+                    // Crea un arreglo de cadenas con los datos del instrumento Percusion.
+
                     writer.writeNext(datos);
+                    // Escribe una línea en el archivo CSV con los datos del instrumento Percusion.
+
                 } else if (instrumento instanceof Viento) {
+                    // Verifica si el instrumento es una instancia de la clase Viento.
+
                     Viento viento = (Viento) instrumento;
+                    // Realiza un casting del instrumento a la clase Viento para acceder a sus métodos específicos.
+
                     String[] datos = {
                             String.valueOf(viento.getCodigo()),
                             String.valueOf(viento.getPrecio()),
@@ -477,16 +566,23 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
                             "",
                             ""
                     };
+                    // Crea un arreglo de cadenas con los datos del instrumento Viento.
+
                     writer.writeNext(datos);
+                    // Escribe una línea en el archivo CSV con los datos del instrumento Viento.
                 }
             }
 
             System.out.println("La lista de instrumentos ha sido guardada correctamente en el archivo CSV.");
+            // Imprime un mensaje indicando que la lista de instrumentos se ha guardado correctamente en el archivo CSV.
+
         } catch (IOException e) {
             System.out.println("Error al guardar la lista de instrumentos en el archivo CSV.");
             e.printStackTrace();
+            // En caso de que ocurra una excepción durante la escritura del archivo CSV, se muestra un mensaje de error y se imprime la traza de la excepción.
         }
     }
+
 
 
     /**
@@ -498,9 +594,22 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
     public boolean venderInstrumento() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Ingrese el código del instrumento a vender: ");
-        int codigo = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea pendiente
+        int codigo;
+        while (true) {
+            System.out.print("Ingrese el código del instrumento a vender: ");
+            String codigoStr = scanner.nextLine();
+
+            try {
+                codigo = Integer.parseInt(codigoStr);
+                if (codigo > 0) {
+                    break;
+                } else {
+                    System.out.println("Error: El código debe ser un número mayor que cero. Intente nuevamente.");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Error: Solo se permiten números. Intente nuevamente.");
+            }
+        }
 
         Instrumento instrumento = listaInstrumento.buscarInstrumento(codigo);
 
@@ -517,6 +626,7 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         }
     }
 
+
     /**
      * Consulta el inventario de instrumentos disponibles.
      *
@@ -532,10 +642,12 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         System.out.println("3. Buscar instrumento por código");
         System.out.println("4. Volver al menú principal");
         System.out.print("Ingrese la opción deseada: ");
-        int opcion = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea pendiente
+        if (scanner.hasNextInt()) {
+            int opcion = scanner.nextInt();
+            scanner.nextLine(); // Consumir el salto de línea pendiente
 
-        switch (opcion) {
+            if (opcion > 0) {
+                switch (opcion) {
             case 1:
                 System.out.println("----- Todos los instrumentos -----");
                 for (Instrumento instrumento : listaInstrumento.getInstrumentos()) {
@@ -565,8 +677,18 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
                 System.out.println("1. Mostrar instrumentos de cuerda");
                 System.out.println("2. Mostrar instrumentos de viento");
                 System.out.println("3. Mostrar instrumentos de percusión");
-                System.out.print("Ingrese la opción deseada: ");
-                int tipoInstrumento = scanner.nextInt();
+
+                int tipoInstrumento;
+
+                do {
+                    System.out.print("Ingrese la opción deseada (1-3): ");
+                    while (!scanner.hasNextInt()) {
+                        System.out.println("Opción inválida. Por favor, seleccione una opción válida (1-3): ");
+                        scanner.next();
+                    }
+                    tipoInstrumento = scanner.nextInt();
+                } while (tipoInstrumento < 1 || tipoInstrumento > 3);
+
                 scanner.nextLine(); // Consumir el salto de línea pendiente
 
                 switch (tipoInstrumento) {
@@ -618,9 +740,17 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
                 }
                 break;
             case 3:
-                System.out.print("Ingrese el código del instrumento a buscar: ");
-                int codigo = scanner.nextInt();
-                scanner.nextLine(); // Consumir el salto de línea pendiente
+                int codigo;
+                do {
+                    System.out.print("Ingrese el código del instrumento a buscar: ");
+                    while (!scanner.hasNextInt()) {
+                        System.out.println("Ingrese un número válido.");
+                        System.out.print("Ingrese el código del instrumento a buscar: ");
+                        scanner.next();
+                    }
+                    codigo = scanner.nextInt();
+                    scanner.nextLine(); // Consumir el salto de línea pendiente
+                } while (codigo <= 0);
 
                 Instrumento instrumento = listaInstrumento.buscarInstrumento(codigo);
 
@@ -650,9 +780,15 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
             case 4:
                 System.out.println("Volviendo al menú principal...");
                 break;
-            default:
-                System.out.println("Opción inválida. Por favor, seleccione una opción válida.");
-                break;
+                    default:
+                        System.out.println("Opción inválida. Por favor, seleccione una opción válida.");
+                        break;
+                }
+            } else {
+                System.out.println("Error: Solo se permiten números positivos. Por favor, ingrese una opción válida.");
+            }
+        } else {
+            System.out.println("Error: Solo se permiten números. Por favor, ingrese una opción válida.");
         }
 
         return true;
@@ -666,7 +802,7 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
     @Override
     public boolean cerrarSesion() {
         System.out.println("Cerrando sesión...");
-        guardarListaInstrumentosEnCSV();
+        guardarListaInstrumentosEnCSV(); // Guarda el archivo csv.
         return true;
     }
 
@@ -684,25 +820,30 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         while (sesionActiva) {
             mostrarMenu();
             System.out.print("Ingrese la opción deseada: ");
-            int opcion = scanner.nextInt();
-            scanner.nextLine(); // Consumir el salto de línea pendiente
+            String opcionStr = scanner.nextLine();
 
-            switch (opcion) {
-                case 1:
-                    agregarInstrumento();
-                    break;
-                case 2:
-                    venderInstrumento();
-                    break;
-                case 3:
-                    consultarInventario();
-                    break;
-                case 4:
-                    cerrarSesion();
-                    break;
-                default:
-                    System.out.println("Opción inválida. Por favor, seleccione una opción válida.");
-                    break;
+            try {
+                int opcion = Integer.parseInt(opcionStr);
+                if (opcion >= 1 && opcion <= 4) {
+                    switch (opcion) {
+                        case 1:
+                            agregarInstrumento();
+                            break;
+                        case 2:
+                            venderInstrumento();
+                            break;
+                        case 3:
+                            consultarInventario();
+                            break;
+                        case 4:
+                            cerrarSesion();
+                            break;
+                    }
+                } else {
+                    System.out.println("Error: La opción ingresada está fuera del rango válido. Por favor, seleccione una opción válida.");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Error: Solo se permiten números. Por favor, ingrese una opción válida.");
             }
         }
     }
@@ -723,6 +864,9 @@ public class SistemaBeatTheRhythmImpl implements SistemaBeatTheRhythm {
         System.out.println("3. Consultar inventario");
         System.out.println("4. Cerrar sesión");
     }
+
+
+
 
 }
 
