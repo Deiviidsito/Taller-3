@@ -1,5 +1,4 @@
 package cl.disc.pa.taller.model;
-import java.util.List;
 
 /**
  * Lista de instrumento, almacena todos los tipos de instrumentos.
@@ -97,13 +96,6 @@ public class ListaInstrumento {
         }
         return null; // Si no se encuentra el instrumento, devuelve null
     }
-
-    /**
-     * Obtiene la cantidad máxima de instrumentos que puede almacenar la lista.
-     *
-     * @return la cantidad máxima de instrumentos
-     */
-
     /**
      * Obtiene el arreglo de instrumentos de la lista.
      *
