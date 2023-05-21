@@ -1,7 +1,4 @@
 package cl.disc.pa.taller.model;
-import com.opencsv.CSVWriter;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.List;
 
 /**
@@ -16,11 +13,6 @@ public class ListaInstrumento {
     private int cant_max;
 
     // Nombre del archivo CSV para guardar el inventario
-    private static final String NOMBRE_ARCHIVO = "instrumentos.csv";
-    // Encabezado de las columnas en el archivo CSV
-    private static final String[] ENCABEZADO_ARCHIVO = {"Código", "Precio", "Stock", "Tipo de instrumento", "Tipo de cuerda",
-            "Número de cuerdas", "Material de construcción", "Tipo", "Tipo de percusión", "Altura"};
-
     /**
      * Constructor de la clase ListaInstrumento.
      *
@@ -111,9 +103,6 @@ public class ListaInstrumento {
      *
      * @return la cantidad máxima de instrumentos
      */
-    public int getCant_max() {
-        return cant_max;
-    }
 
     /**
      * Obtiene el arreglo de instrumentos de la lista.
@@ -133,12 +122,5 @@ public class ListaInstrumento {
         return cant_actual;
     }
 
-    public void setInstrumentos(List<Instrumento> listaInstrumentos) {
-    }
-
-
-    /**
-     * Guarda el inventario de instrumentos en un archivo CSV.
-     */
 
 }
