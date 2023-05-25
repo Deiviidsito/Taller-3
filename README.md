@@ -2,7 +2,7 @@
 
 <br>
 <div style ="display:flex;" align="center">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/7af9a608-49ae-4eee-aad0-d826b0c6c5f9" style="width:350px"/>
+  <img src="https://github.com/Deiviidsito/Taller-3/assets/104799508/e4d9c2e7-d8ec-491d-b4ec-387d44686c98" style="width:350px"/>
 </div>
 Beat the Rhythm es una tienda de música familiar contratada para llevar a cabo su inventario.
 
@@ -21,13 +21,13 @@ Edgardo Ortiz.
 #### Diagrama de Clases
 <br>
 <div style ="display:flex;" align="center">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/de81126f-75ac-44ac-b9d7-f74d83d1e7ba" style="width:950px"/>
+  <img src="https://github.com/Deiviidsito/Taller-3/assets/104799508/e7abbca8-c8a4-483e-b099-d70a2e72f6bc" style="width:950px"/>
 </div>
 
 #### Modelo del dominio
 <br>
 <div style ="display:flex;" align="center">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/63c79b09-33f7-4f33-8f6b-55a8cfbb8986" style="width:350px"/>
+  <img src="https://github.com/Deiviidsito/Taller-3/assets/104799508/79d44d40-9054-4960-9e30-858b154177b2" style="width:350px"/>
 </div>
 
 
@@ -38,24 +38,27 @@ Edgardo Ortiz.
 Aqui puedes ver las opciones que puedes seleccionar.
 <br>
 <div style ="display:flex;" align="center">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/0855a0be-6fc3-498d-a0f9-5e6af5b04def" style="width:350px"/>
+  <img src="https://github.com/Deiviidsito/Taller-3/assets/104799508/93f561f0-a62a-4bda-a44e-4a748c966ccc" style="width:350px"/>
 </div>
+
 
 ## 1. Agregar Instrumento
 Seleccionar que instrumento quieres agregar: Cuerda / Viento / Percusion.
 <br>
 <div style ="display:flex;" align="center">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/0508af1f-5b94-42bd-a5d3-0a55161feacf" style="width:350px"/>
+  <img src="https://github.com/Deiviidsito/Taller-3/assets/104799508/4f9750fb-e1a4-46b1-9aad-5bc328409d3d" style="width:350px"/>
 </div>
+
 
 
 #### 1.1 Selección de instrumento
 
 <div align="center">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/770871ee-0123-4dbb-9cbf-d63c82ce58d1" width="300">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/c398e910-879c-4ca2-a80a-16e3738e5747" width="300">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/3d767ef5-0087-45f2-a267-4569bf125bc5" width="300">
+  <img src="https://github.com/Deiviidsito/Taller-3/assets/104799508/ffeb6819-7c53-4b33-ad07-1203ce42b817" width="300">
+  <img src="https://github.com/Deiviidsito/Taller-3/assets/104799508/a68375a3-5283-4211-86d2-d9a6e49165af" width="300">
+  <img src="https://github.com/Deiviidsito/Taller-3/assets/104799508/439d15f9-66ed-4e44-abe5-313790d6bc24" width="300">
 </div>
+
 
 <div align="center">
   Cuerda /
