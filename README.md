@@ -79,35 +79,38 @@ Su instrumento se agrego exitosamente al archivo instrumentos.csv.
 Se debe de ingresar el codigo del instrumento para vender el instrumento.
 <br>
 <div style ="display:flex;" align="center">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/a1db5131-5753-4d1f-b40f-4439b58594a7" style="width:550px"/>
+  <img src="https://github.com/Deiviidsito/Taller-3/assets/104799508/0bcb0e0c-0a76-4d6b-824a-ab2cd8afe352" style="width:550px"/>
 </div>
  
 #### 2.1 Se vendio exitosamente :chart:
 Si el codigo esta en el archivo instrumentos.csv, se vendio exitosamente.
 <br>
 <div style ="display:flex;" align="center">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/aa9fae12-7172-455d-8a57-edb059fabc19" style="width:650px"/>
+  <img src="https://github.com/Deiviidsito/Taller-3/assets/104799508/27299826-c08b-4223-8fbf-1a61fa3a3f9f" style="width:650px"/>
 </div>
+
 
 ## 3. Consultar Inventario :envelope_with_arrow:
 Se despliega un submenu y seleccionas la opcion que quieres.
 <br>
 <div style ="display:flex;" align="center">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/6abf65a5-3619-4b22-8bdd-7b92efa472ba" style="width:350px"/>
+  <img src="https://github.com/Deiviidsito/Taller-3/assets/104799508/b8e11de3-8d31-4a31-b00a-dbc188458c0e" style="width:350px"/>
 </div>
+
 
 ## 4. Cerrar Sesion
 
 <br>
 <div style ="display:flex;" align="center">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/b20cbca9-2630-46e7-9e2d-d715974aa17f" style="width:550px"/>
+  <img src="https://github.com/Deiviidsito/Taller-3/assets/104799508/49282a99-ade2-4dd8-a417-580456fc12d1" style="width:550px"/>
 </div>
+
 
 ## 4. Archivo VSC
 Visualizacion del archivo VSC
 <br>
 <div style ="display:flex;" align="center">
-  <img src="https://github.com/Deiviidsito/Taller3/assets/104799508/6f9dde79-32c1-4b40-ae95-c59ca81cd843" style="width:750px"/>
+  <img src="https://github.com/Deiviidsito/Taller-3/assets/104799508/dc727576-de61-4262-9866-a5a25f1281e8" style="width:750px"/>
 </div>
 
 
